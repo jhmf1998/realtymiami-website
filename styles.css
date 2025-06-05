@@ -122,24 +122,24 @@ select:focus {
     outline: none;
 }
 
-.radio-group {
+.radio-group, .checkbox-group {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.radio-container {
+.radio-container, .checkbox-container {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
     margin-right: 8px;
     cursor: pointer;
 }
 
-.radio-label {
+.radio-label, .checkbox-label {
     font-weight: normal;
 }
 
@@ -220,7 +220,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .radio-group {
+    .radio-group, .checkbox-group {
         flex-direction: column;
         gap: 10px;
     }
