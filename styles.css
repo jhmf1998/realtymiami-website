@@ -50,19 +50,24 @@ header {
 main {
     display: flex;
     justify-content: center;
+    background-image: url('grandview_background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    border-radius: 10px;
 }
 
 .form-container {
-    background-color: var(--light-color);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     padding: 30px;
     width: 100%;
     max-width: 600px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     color: var(--primary-color);
     margin-bottom: 10px;
     text-align: center;
@@ -72,6 +77,14 @@ h1 {
     text-align: center;
     color: var(--secondary-color);
     margin-bottom: 30px;
+}
+
+.building-address {
+    text-align: center;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 /* Form Styles */
@@ -89,7 +102,8 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-textarea {
+textarea,
+select {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--border-color);
@@ -102,7 +116,8 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     border-color: var(--accent-color);
     outline: none;
 }
