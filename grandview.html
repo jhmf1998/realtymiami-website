@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grandview | 5900 Collins Ave | RealtyMiami</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="middleware_connector.js" defer></script>
+    <script src="integration.js" defer></script>
+    <script src="api_config.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="realty_miami_logo.jpg" alt="RealtyMiami Logo" class="logo">
+            <h1>The Grandview</h1>
+            <h2>5900 Collins Ave, Miami Beach</h2>
+        </header>
+        
+        <main>
+            <div class="form-container">
+                <h2>Interested in this property?</h2>
+                <p>Fill out the form below and we'll get back to you right away</p>
+                
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="unit">Unit # (Required)</label>
+                        <input type="text" id="unit" name="unit" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Preferred Communication Method</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="communicationPreference" value="SMS" checked>
+                                SMS
+                            </label>
+                            <label>
+                                <input type="radio" name="communicationPreference" value="WhatsApp">
+                                WhatsApp
+                            </label>
+                            <label>
+                                <input type="radio" name="communicationPreference" value="Both">
+                                Both
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Language Preference</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="languagePreference" value="English">
+                                English
+                            </label>
+                            <label>
+                                <input type="checkbox" name="languagePreference" value="Spanish">
+                                Spanish
+                            </label>
+                            <label>
+                                <input type="checkbox" name="languagePreference" value="Portuguese">
+                                Portuguese
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="additionalInfo">Additional Information (Optional)</label>
+                        <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 RealtyMiami. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

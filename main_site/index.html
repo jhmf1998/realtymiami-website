@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Freitas | Miami Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Miami Real Estate</h1>
+                <p>Your trusted partner for luxury properties in Miami Beach</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="assets/JoaoFreitasBlazer.png" alt="João Freitas - Miami Real Estate Agent">
+            </div>
+            <div class="profile-info">
+                <h2>João Freitas</h2>
+                <p class="title">Real Estate Professional</p>
+                <p class="description">Specializing in luxury properties across Miami Beach and surrounding areas. With extensive market knowledge and a commitment to exceptional service, I help clients find their perfect Miami home.</p>
+                <div class="contact-button">
+                    <a href="https://wa.me/13056089922" target="_blank" onclick="trackWhatsAppClick()">
+                        <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured-areas">
+            <h2>Featured Areas</h2>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3>South Beach</h3>
+                    <p>Vibrant nightlife, Art Deco architecture, and pristine beaches</p>
+                </div>
+                <div class="area-card">
+                    <h3>Brickell</h3>
+                    <p>Miami's financial district with luxury high-rise condos</p>
+                </div>
+                <div class="area-card">
+                    <h3>Coconut Grove</h3>
+                    <p>Lush, bohemian neighborhood with waterfront properties</p>
+                </div>
+                <div class="area-card">
+                    <h3>Bal Harbour</h3>
+                    <p>Exclusive enclave known for luxury shopping and residences</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RealtyMiami. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function trackWhatsAppClick() {
+            // Track WhatsApp clicks
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'click', {
+                    'event_category': 'Contact',
+                    'event_label': 'WhatsApp Button',
+                    'value': 1
+                });
+            }
+            
+            // You can also implement custom tracking here
+            console.log('WhatsApp button clicked');
+            
+            // Optional: Send data to your CRM or tracking system
+            // fetch('your-tracking-endpoint', {
+            //     method: 'POST',
+            //     body: JSON.stringify({
+            //         action: 'whatsapp_click',
+            //         timestamp: new Date().toISOString()
+            //     })
+            // });
+        }
+    </script>
+</body>
+</html>
